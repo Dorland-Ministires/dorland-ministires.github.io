@@ -1,0 +1,122 @@
+.primaryColor {
+    color: #4C711F;
+}
+
+.secondaryColor {
+    background-color:#C0C0C0 !important;
+}
+
+h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a{
+    color: #4C711F;
+}
+
+/**This is the header section**/
+
+    /**This is the header's navigation section**/
+        .navDiv {
+            font-size: 0;
+        }
+        .mainNavbar {
+            display: none;
+            font-size: 0;
+        }
+        .compactNavbar {
+            display: inline;
+            float: left;
+            padding-right: 3em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+            .compactNavbar div{
+                padding-left: 1em !important;
+                padding-right: 1em !important;
+                padding-top: 0.5em !important;
+                padding-bottom: 0.5em !important;
+            }
+            .compactNavbar img {
+                width: 3em;
+            }    
+        nav div ul li a{
+            font-size: medium;
+            font-weight: bold;
+        }
+        #navbarDropdown a{
+            padding: 0.5em;
+            padding-left: 2em;
+            padding-bottom: 0.25em;
+            font-size: medium;
+        }
+        .dropdown-menu {
+            min-width: max-content !important;
+            position: absolute;
+            z-index: 1;
+        }
+    /**This is the header's title section**/
+        .headerTitlePlacement{
+            text-align: center;
+            margin-left: 3em;
+        }
+
+        .compactNavTitlePlacement {
+            margin-left: -4em;
+            position: fixed;
+            z-index: 1;
+        }
+    /**This is the header's logo section**/
+        .logo {
+            max-width: 25%;
+            border-radius: 25em;
+            margin-left: 35%;
+        }
+    /**This is the header's image section**/
+        .headerImage{
+            background-image:url("../images/NightSky.jpg");
+            background-color: rgb(233, 233, 233);
+            margin: 0;
+            width: 100%;
+            padding-bottom: 3em;
+        }
+/**This is the end of the header section**/
+
+
+@media (min-width: 876px) {
+
+    .headerTitlePlacement{
+        margin-left: -3em;
+    }
+    
+    .compactNavbar {
+        display: none;
+    }
+
+    .logo {
+        max-width: 50%;
+        border-radius: 25em;
+    }
+    
+    .mainNavbar {
+        display: initial;
+        padding: 0;
+    }
+    
+    nav div ul, nav div ul div {
+        background-color:#C0C0C0;
+        width: 100%;
+        padding-bottom: 0.25em;
+    }
+    
+    nav div ul li{
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        list-style-type: none;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: medium;
+    }
+}
+
+
+.divider
+{
+    max-width: 100%;
+}
